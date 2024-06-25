@@ -1,0 +1,9 @@
+f=zeros(30,30);
+f(10:20,10:20)=1;
+imshow(f);
+R=tfd2d(f);
+figure;
+imshow(log(1+abs(R)),[]);
+W=tfd2dI(R);
+figure;
+imshow(W);
